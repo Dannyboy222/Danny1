@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <head>
+        <title>WEEK1</title>
+    </head>
+    <body>
+        <h1>CAT PICTURES</h1>
+        <div class="nav">
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link1</a></li>
+        </div>
+        <div class="bigbox">
+            <div class="upbox">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            </div>
+            <div class="downbox">
+            <div class="box4"></div>
+            <div class="box5"></div>
+            <div class="box6"></div>
+        </div>
+        </div>
+        <div id="footer">Footer area</div>
+    </body>
+</html>@media screen and (max-width: 700px) {
+    body {
+      background-color: lightblue;
+    }
+    .box1 {
+        width: 100%;
+        text-align: center;
+      }
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Ma Shan Zheng', cursive;
+}
+.nav {
+    display: flex;
+    list-style: none;
+    margin: 40px;
+    text-align: center;
+    border: 2px solid black;
+}
+.nav > li {
+    border: 2px solid black;
+    font-size: 30px;
+    background-color: ;
+    color: white;
+    width: 500px;
+    height: 30px;
+    text-decoration: none;
+
+}
+.nav > li:hover {
+    color: white;
+    cursor: pointer;
+}
+.bigbox {
+    border: 2px solid black;
+    width: 900px;
+    height: 550px;
+    margin-left: 500px;
+}
+.upbox {
+    display: flex;
+    margin-left: 40px;
+}
+.upbox > .box1 {
+    border: 2px solid black;
+    width: 10%;
+    height: 100px;
+    margin: 60px;
+    background-image: url(image/pic1.jpg);
+    background-size: cover;
+}
+.upbox > .box1:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+.upbox > .box2 {
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 60px;
+    background-image: url(image/pic2.jpg);
+    background-size: cover;
+}
+.upbox > .box2:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+.upbox > .box3 {
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 60px;
+    background-image: url(image/pic3.jpg);
+    background-size: cover;
+}
+.upbox > .box3:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+.downbox {
+    display: flex;
+    margin-left: 40px;
+}
+.downbox > .box4 {
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 60px;
+    background-image: url(image/pic4.jpg);
+    background-size: cover;
+}
+.downbox > .box4:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+.downbox > .box5 {
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 60px;
+    background-image: url(image/pic5.jpg);
+    background-size: cover;
+}
+.downbox > .box5:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+.downbox > .box6 {
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 60px;
+    background-image: url(image/pic6.jpg);
+    background-size: cover;
+}
+.downbox > .box6:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+#footer {
+    border: 2px solid black;
+    width: cover;
+    height: 100px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Ma Shan Zheng', cursive;
+
+}
+@media (max-width: 700px) {
+    .bigbox, .upbox, .downbox {   
+      flex-direction: column;
+    }
